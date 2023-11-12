@@ -3,11 +3,14 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdOutlineClose } from 'react-icons/md';
 import { IoSunnyOutline, IoMoonOutline } from 'react-icons/io5';
 import { BsBell } from 'react-icons/bs'
-import { FaTelegramPlane, FaHeadphones } from 'react-icons/fa'
-import { AiOutlinePlus } from 'react-icons/ai'
-import { BsArrowRightShort } from 'react-icons/bs'
-import {FiSearch, FiDownload}  from 'react-icons/fi';
-import {BsFilter} from 'react-icons/bs'
+import {  FaHeadphones } from 'react-icons/fa'
+import acct from '../assets/fair-icon.png'
+import castle from '../assets/fin.png'
+import phone from '../assets/airtime.png'
+import light from '../assets/tricity.png'
+import Data from '../assets/data.png'
+import cable from '../assets/cable.png' 
+import internet from '../assets/internet.png'
 import profile from '../assets/Profile.png'
 import logo from '../assets/fairmoney-logo.png'
 import save from '../assets/stack-line.png'
@@ -129,7 +132,78 @@ const Payments =()=>{
   </div>
   </div>
   <div className="flex-col">
-     <h1 className="text-7xl px-5">coming soon</h1>
+     <h1 className="text-xl font-bold capitalize px-5 pt-7 pb-2">send money</h1>
+     <div className="flex flex-col md:flex-row gap-10 px-5">
+      <div className="flex items-center gap-2">
+        <div className="">
+        <img src={acct} alt="acct" />
+        </div>
+        <div className="">
+          <h1 className="font-semibold">To FairMoney Account</h1>
+          <h1 className="text-sm text-gray-400">Send money to a fair money user</h1>
+        </div>
+      </div>
+      <div className="flex items-center gap-2">
+        <div className="">
+        <img src={castle} alt="castle" />
+        </div>
+        <div className="">
+          <h1 className="font-semibold">To Other Banks</h1>
+          <h1 className="text-sm text-gray-400">Send money to a local bank</h1>
+        </div>
+      </div>
+     </div>
+     {/*utlilities */}
+     <h1 className="text-xl font-bold capitalize px-5 pt-7 pb-2">pay bills</h1>
+     <div className="flex flex-col md:flex-row gap-10 px-5">
+      <div className="flex items-center gap-2">
+        <div className="">
+        <img src={phone} alt="phone" />
+        </div>
+        <div className="">
+          <h1 className="font-semibold">Airtime Recharge</h1>
+          <h1 className="text-sm text-gray-400">Send money to a fair money user</h1>
+        </div>
+      </div>
+      <div className="flex items-center gap-2">
+        <div className="">
+        <img src={Data} alt="Data" />
+        </div>
+        <div className="">
+          <h1 className="font-semibold">To Other Banks</h1>
+          <h1 className="text-sm text-gray-400">Send money to a local bank</h1>
+        </div>
+      </div>
+      <div className="flex items-center gap-2">
+        <div className="">
+        <img src={light} alt="light" />
+        </div>
+        <div className="">
+          <h1 className="font-semibold">Electricity</h1>
+          <h1 className="text-sm text-gray-400">Send money to a local bank</h1>
+        </div>
+      </div>
+     </div>
+     <div className="flex flex-col md:flex-row gap-10 py-5 px-5">
+      <div className="flex items-center gap-2">
+        <div className="">
+        <img src={cable} alt="cable" />
+        </div>
+        <div className="">
+          <h1 className="font-semibold">Cable TV</h1>
+          <h1 className="text-sm text-gray-400">Send money to a fair money user</h1>
+        </div>
+      </div>
+      <div className="flex items-center gap-2">
+        <div className="">
+        <img src={internet} alt="internet" />
+        </div>
+        <div className="">
+          <h1 className="font-semibold">Internet</h1>
+          <h1 className="text-sm text-gray-400">Send money to a local bank</h1>
+        </div>
+      </div>
+     </div>
   </div>
 
 </div>
