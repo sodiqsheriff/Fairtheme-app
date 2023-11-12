@@ -4,7 +4,7 @@ import bank from '../assets/bank-line.png'
 import jet from '../assets/send-plane-line.png'
 import coin from '../assets/coins-line.png'
 import stack from '../assets/stack-line.png'
-import secure from '../assets/secure-Payment-line.png'
+import safe from '../assets/secure-Payment-line.png'
 import sett from '../assets/settings-4-line.png'
 
 import {FaHeadphones} from 'react-icons/fa'
@@ -57,7 +57,7 @@ const Sidebar = () => {
             <a href='/Savings' className="">savings</a>
         </div>
         <div className="flex gap-3">
-            <img src={secure} alt="secure" />
+            <img src={safe} alt="safe" />
             <a href='/Method' className="">Payments method</a>
         </div>
         <div className="flex gap-3">
