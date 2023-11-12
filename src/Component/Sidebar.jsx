@@ -4,7 +4,7 @@ import bank from '../assets/bank-line.png'
 import jet from '../assets/send-plane-line.png'
 import coin from '../assets/coins-line.png'
 import stack from '../assets/stack-line.png'
-import safe from '../assets/secure-Payment-line.png'
+import safe from '../assets/secure.png'
 import sett from '../assets/settings-4-line.png'
 
 import {FaHeadphones} from 'react-icons/fa'

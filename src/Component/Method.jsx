@@ -15,7 +15,7 @@ import bank from '../assets/bank-line.png'
 import jet from '../assets/send-plane-line.png'
 import coin from '../assets/coins-line.png'
 import stack from '../assets/stack-line.png'
-import secure from '../assets/secure-payment-line.png'
+import secure from '../assets/secure.png'
 import sett from '../assets/settings-4-line.png'
 import out from '../assets/rightarrow.png'
 import Sidebar from "./Sidebar"
