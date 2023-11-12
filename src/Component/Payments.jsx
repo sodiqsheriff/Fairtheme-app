@@ -9,8 +9,8 @@ import castle from '../assets/fin.png'
 import phone from '../assets/airtime.png'
 import light from '../assets/tricity.png'
 import Data from '../assets/data.png'
-import cable from '../assets/cable.png' 
-import internet from '../assets/internet.png'
+import tv from '../assets/cable.png' 
+import ternet from '../assets/internet.png'
 import profile from '../assets/Profile.png'
 import logo from '../assets/fairmoney-logo.png'
 import save from '../assets/stack-line.png'
@@ -187,7 +187,7 @@ const Payments =()=>{
      <div className="flex flex-col md:flex-row gap-10 py-5 px-5">
       <div className="flex items-center gap-2">
         <div className="">
-        <img src={cable} alt="cable" />
+        <img src={tv} alt="tv" />
         </div>
         <div className="">
           <h1 className="font-semibold">Cable TV</h1>
@@ -196,7 +196,7 @@ const Payments =()=>{
       </div>
       <div className="flex items-center gap-2">
         <div className="">
-        <img src={internet} alt="internet" />
+        <img src={ternet} alt="ternet" />
         </div>
         <div className="">
           <h1 className="font-semibold">Internet</h1>
