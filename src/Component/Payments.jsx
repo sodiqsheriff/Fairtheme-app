@@ -148,7 +148,7 @@ const Payments =()=>{
         <img src={castle} alt="castle" />
         </div>
         <div className="">
-          <h1 className="font-semibold">To Other Banks</h1>
+          <a href='/Payments/TransferPoint/*'  className="font-semibold">To Other Banks</a>
           <h1 className="text-sm text-gray-400">Send money to a local bank</h1>
         </div>
       </div>
