@@ -48,7 +48,7 @@ const Settings =()=>{
     setIsDarkMode(!isDarkMode);
 };
     return(
-      <div className='flex' > 
+      <div className='flex dark:bg-black h-full w-full' > 
       <div className="hidden md:hidden lg:flex lg:w-1/5">
         <Sidebar />
       </div>
@@ -99,9 +99,92 @@ const Settings =()=>{
     
     )}
   </div>
-
   <div className="flex justify-between items-center ps-5 py-2 md:px-8 md:border md:border-x-0 md:border-t-0 lg:h-16 ">
-      <h1 className="5xl">settingssssss</h1>
+      <div className='flex flex-col dark:text-white leading-tight'>
+        <h1 className="text-md md:text-lg font-bold capitalize lg:text-xl ">settings</h1>
+      </div>
+      <div className={`dashboard ${isDarkMode ? 'dark:bg-gray-900' : 'bg-white'}`}>
+    
+    <div className={`theme-switcher flex gap-2  items-center ${isDarkMode ? 'dark:bg-black' : 'bg-white'} p-2 rounded-md shadow-inner`}>
+    <p className="ml-2 text-sm md:text-md text-black dark:text-white">{isDarkMode ? 'Dark Mode' : 'Light Mode'}</p>
+      <button
+        onClick={toggleTheme}
+        className={`p-2 rounded-full transition-all duration-300 ${isDarkMode ? 'bg-gray-800 shadow-2xl' : 'bg-gray-100 shadow-inner'}`}
+      >
+        <div className="flex shadow-inner   space-x-3 md:space-x-5">
+          {isDarkMode ? <IoSunnyOutline className='bg-gray-400 text-white h-5 dark:bg-gray-800 dark:text-gray-600  rounded w-7'  /> : <IoMoonOutline  />}
+          {isDarkMode ? <IoMoonOutline className='dark:text-white '/> : <IoSunnyOutline   className='text-black bg-white h-5 shadow-inner dark:bg-black  rounded w-7' />}
+        </div>
+      </button>
+      <div className="flex items-center space-x-8">
+     <BsBell className='text-2xl' />
+     <img src ={profile} alt='profile' className='rounded-full' />
+     </div>
+    </div>
+    {/* Other content of your Dashboard */}
+    
+  </div>
+  </div>
+  <div className=" ">
+      <div className="flex flex-col h-full md:flex-row md:border md:border-x-0 md:border-b-0 md:h-screen lg:h-full lg:border-t-0 ">
+        <div className="grid grid-cols-2 gap-4 md:flex md:flex-col px-5 pb-10 pr-10 md:border-y-0 md:border-b-0 md:border h-screen lg:border-l-0 lg:border-t-0">
+         <div className='text-gray-500 space-y-5 pt-3'>
+         <header className="px-9 pb-2 text-xl font-bold capitalize text-black  dark:text-white">account</header>
+            <h1 className="bg-gray-200 rounded p-2  md:px-4 md:py-2"><a href="">Bank account details</a></h1>
+            <h1 className='md:ps-4'><a href="">Bank account benefits</a></h1>
+            <h1 className='md:ps-4'><a href="">Generate Statement</a></h1>
+            <h1 className='md:ps-4'><a href="">Invite friends</a></h1>
+            <h1 className='md:ps-4'><a href="">Loan and payment history</a></h1>
+         </div>
+         
+         <div className="text-gray-500 space-y-5 pt-3 md:pt-7 md:ps-4">
+         <h1 className="text-xl font-bold capitalize text-black dark:text-white">support</h1>
+          <h6><a href="">Need help?</a></h6>
+          <h6><a href="">About FairMoney Bank</a></h6>
+         </div>
+        </div>
+        <div className="flex-col pt-3 px-5">
+         <h1 className="font-bold pb-3 text-lg dark:text-white">Your FairMoney bank account details</h1>
+         <h1 className="text-sm text-gray-400 pb-1">Your FairMoney bank name</h1>
+         <h1 className="font-bold text-lg pb-3 dark:text-white">Fairmoney Microfinance Bank LTD</h1>
+         <div className="flex items-center justify-between">
+          <div className="flex-col">
+          <h1 className="text-sm text-gray-400 pb-1">FairMoney bank  account number</h1>
+         <h1 className="font-bold pb-5 dark:text-white">5910483467</h1>
+          </div>
+          <div className="flex-col text-center text-white py-2 px-5 rounded-3xl bg-black dark:bg-white dark:text-black dark:font-semibold">
+            <a href="">Copy</a>
+            </div>
+         </div>
+         
+         <h1 className="text-sm text-gray-400 pb-1">Account owner</h1>
+         <h1 className="font-bold pb-5 capitalize">olamilekan afolabi</h1>
+         <div className="flex bg-yellow-100 rounded-xl p-4 gap-2">
+           <div className="hidden md:flex-col p-3 border-2 border-yellow-700 rounded-full">
+
+           </div>
+           <div className="flex-col">
+            <h1 className="text-black text-lg">Your bank account is at Level 3</h1>
+            <h1 className="text-gray-400 text-xs">Enjoy higher loan amounts and outbound
+            <br />transaction limits of up to #10,000,000</h1>
+            <div className="text-center text-white bg-black w-36 p-2 mt-3 rounded-3xl">
+              <a href="">View benefits</a>
+            </div>
+           
+           </div>
+
+         </div>
+         <h1 className="hidden md:hidden lg:flex-col text-center px-5 pt-5 pb-48 text-xs text-gray-400">
+              FairMoney MFB is licensed by the <b>Central Bank of Nigeria.</b>All <br />
+              deposits are insured by <b>NDIC</b>
+            </h1>
+         <h1 className="md:flex-col px-5 text-center pt-5 pb-48 text-xs text-gray-400">
+              FairMoney MFB is licensed by the <b>Central Bank of Nigeria.</b>All
+              deposits are insured by <b>NDIC</b>
+            </h1>
+        </div>
+      </div>
+      
   </div>
 
 </div>

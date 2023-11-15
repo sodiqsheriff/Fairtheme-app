@@ -9,6 +9,7 @@ import Savings from "./Component/Savings";
 import Method from "./Component/Method";
 import Settings from "./Component/Settings";
 import TransferPoint from "./Component/TransferPoint";
+import LoanPoint from "./Component/LoanPoint";
 import './App.css'
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
     {path: "/Payments/*", element: <Payments />} ,
     {path: "/Payments/TransferPoint/*", element: <TransferPoint />} ,
     {path: "/Loans/*", element: <Loans />},
+    {path: "/Loans/LoanPoint/*", element: <LoanPoint />} ,
     {path: "/Savings/*", element: <Savings />},
     {path: "/Method/*", element: <Method />},
     {path: "/Settings/*", element: <Settings />} 

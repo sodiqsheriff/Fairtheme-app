@@ -48,7 +48,7 @@ const Method =()=>{
     setIsDarkMode(!isDarkMode);
 };
     return(
-      <div className='flex' > 
+      <div className='flex dark:bg-black h-screen w-full' > 
       <div className="hidden md:hidden lg:flex lg:w-1/5">
         <Sidebar />
       </div>
@@ -102,8 +102,7 @@ const Method =()=>{
 
   <div className="flex justify-between items-center ps-5 py-2 md:px-8 md:border md:border-x-0 md:border-t-0 lg:h-16 ">
       <div className='flex flex-col dark:text-white leading-tight'>
-        <h1 className="text-xs md:text-sm">Hello</h1>
-        <h1 className="text-md md:text-lg font-bold capitalize ">Olanrewaju</h1>
+        <h1 className="text-md md:text-lg font-bold capitalize lg:text-xl ">payment method</h1>
       </div>
       <div className={`dashboard ${isDarkMode ? 'dark:bg-gray-900' : 'bg-white'}`}>
     
@@ -128,7 +127,18 @@ const Method =()=>{
   </div>
   </div>
   <div className="flex-col">
-    <h1 className="text-6xl">Payments method</h1>
+    <h1 className="px-5 pt-5 pb-3">Manage the cards linked to your account.</h1>
+    <div className="flex flex-col px-5 md:flex md:flex-row gap-5 w-full md:w-4/5 lg:w-3/5">
+      <div className="flex-col rounded-xl w-full md:w-1/2 border">
+        
+      </div>
+      <div className="items-center justify-center py-20 w-full md:w-1/2 dark:text-white dark:border-white rounded-xl border">
+        <div className="flex mx-auto border border-dashed rounded-full border-300 p-2 w-9">
+        <AiOutlinePlus className='text-lg' />
+        </div>
+        <h1 className="text-xs md:text-sm pt-1 text-center capitalize">add payment method</h1>
+      </div>
+    </div>
   </div>
 
 </div>

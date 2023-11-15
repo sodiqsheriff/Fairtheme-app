@@ -3,15 +3,18 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdOutlineClose } from 'react-icons/md';
 import { IoSunnyOutline, IoMoonOutline } from 'react-icons/io5';
 import { BsBell } from 'react-icons/bs'
-import { FaTelegramPlane, FaHeadphones, FaLessThan } from 'react-icons/fa'
-import {LiaLessThanSolid} from 'react-icons/lia'
+import { FaTelegramPlane, FaHeadphones, FaLessThan, FaGreaterThan } from 'react-icons/fa'
+import {LiaLessThanSolid, LiaGreaterThanSolid} from 'react-icons/lia'
 import { AiOutlinePlus } from 'react-icons/ai'
 import { BsArrowRightShort } from 'react-icons/bs'
 import {FiSearch, FiDownload}  from 'react-icons/fi';
 import {BsFilter} from 'react-icons/bs'
 import profile from '../assets/Profile.png'
 import logo from '../assets/fairmoney-logo.png'
+import fair from '../assets/fair-icon.png'
 import save from '../assets/stack-line.png'
+import opay from '../assets/opay.png'
+import wema from '../assets/wemabank.png'
 import bank from '../assets/bank-line.png'
 import jet from '../assets/send-plane-line.png'
 import coin from '../assets/coins-line.png'
@@ -132,20 +135,100 @@ const TransferPoint =()=>{
       <a href="/Payments/*" className='flex gap-1 items-center font-semibold capitalize p-5 dark:text-white'><LiaLessThanSolid />back</a>
       <h1 className="font-semibold text-lg capitalize px-5">receiver's account</h1>
       <div className="px-5 pt-3 space-y-4">
-        <input type="text" placeholder='10 Digit Account Number' className='placeholder-gray-400 border border-gray-300 outline-none p-2 rounded w-1/2' />
-        <div className="flex p-2 items-center gap-2 border border-gray-300 rounded w-1/2">
+        <input type="text" placeholder='10 Digit Account Number' className='placeholder-gray-400 border border-gray-300 outline-none p-2 rounded w-full md:w-1/2' />
+        <div className="flex p-2 items-center gap-2 border border-gray-300 rounded w-full md:w-1/2">
             <img src={bank} alt='bank' className='w-5' />
             <input type='text' placeholder='Select Bank' className='placeholder-gray-400 border-none outline-none' />
         </div>
-        <div className="bg-gray-400 p-2 text-white font-semibold  text-center w-1/2 rounded">
+        <div className="bg-gray-400 p-2 text-white font-semibold  text-center w-full md:w-1/2 rounded">
         <a href="" className=''>Proceed</a>
         </div>
         
         </div>
         <div className="flex-col px-5 pt-5">
-            <div className="flex gap-5">
+            <div className="flex gap-5 pb-5">
                 <h1 className="font-bold capitalize">recent transfers</h1>
                 <h1 className="font-bold text-gray-400 capitalize">beneficiaries</h1>
+            </div>
+            <div className="flex items-center justify-between border border-x-0 border-t-0 pb-2 w-full md:w-1/2">
+              <div className="flex items-center gap-2 py-2 ">
+                <div className="flex-col">
+                  <img src={opay} alt="" />
+                  </div>
+                  <div className="flex-col">
+                    <h1 className="font-bold capitalize">olamilekan afolabi olanrewaju</h1>
+                    <div className="flex">
+                      <h1 className="text-sm text-gray-400 border border-y-0 border-l-0 pr-1">9017325355</h1>
+                       <h1 className="text-sm text-gray-400 ps-1 capitalize">opay</h1>
+                    </div>
+                    
+                  </div>
+              </div>
+              <div className="flex-col"><LiaGreaterThanSolid /></div>
+            </div>
+                  <div className="flex items-center justify-between border border-x-0 border-t-0 pb-2 w-full md:w-1/2">
+              <div className="flex items-center gap-2 py-2 ">
+                <div className="flex-col">
+                  <img src={wema} alt="" />
+                  </div>
+                  <div className="flex-col">
+                    <h1 className="font-bold capitalize">olamilekan afolabi olanrewaju</h1>
+                    <div className="flex">
+                      <h1 className="text-sm text-gray-400 border border-y-0 border-l-0 pr-1">9017325355</h1>
+                       <h1 className="text-sm text-gray-400 ps-1 capitalize">opay</h1>
+                    </div>
+                    
+                  </div>
+              </div>
+              <div className="flex-col"><LiaGreaterThanSolid /></div>
+            </div>
+                  <div className="flex items-center justify-between border border-x-0 border-t-0 pb-2 w-full md:w-1/2">
+              <div className="flex items-center gap-2 py-2 ">
+                <div className="flex-col">
+                  <img src={fair} alt="" />
+                  </div>
+                  <div className="flex-col">
+                    <h1 className="font-bold capitalize">olamilekan afolabi olanrewaju</h1>
+                    <div className="flex">
+                      <h1 className="text-sm text-gray-400 border border-y-0 border-l-0 pr-1">9017325355</h1>
+                       <h1 className="text-sm text-gray-400 ps-1 capitalize">opay</h1>
+                    </div>
+                    
+                  </div>
+              </div>
+              <div className="flex-col"><LiaGreaterThanSolid /></div>
+            </div>
+                  <div className="flex items-center justify-between border border-x-0 border-t-0 pb-2 w-full md:w-1/2">
+              <div className="flex items-center gap-2 py-2 ">
+                <div className="flex-col">
+                  <img src={opay} alt="" />
+                  </div>
+                  <div className="flex-col">
+                    <h1 className="font-bold capitalize">olamilekan afolabi olanrewaju</h1>
+                    <div className="flex">
+                      <h1 className="text-sm text-gray-400 border border-y-0 border-l-0 pr-1">9017325355</h1>
+                       <h1 className="text-sm text-gray-400 ps-1 capitalize">opay</h1>
+                    </div>
+                    
+                  </div>
+              </div>
+              <div className="flex-col"><LiaGreaterThanSolid /></div>
+            </div>
+                  <div className="flex items-center justify-between border border-x-0 border-t-0 w-full md:w-1/2">
+              <div className="flex items-center gap-2 py-2 ">
+                <div className="flex-col">
+                  <img src={wema} alt="" />
+                  </div>
+                  <div className="flex-col">
+                    <h1 className="font-bold capitalize">olamilekan afolabi olanrewaju</h1>
+                    <div className="flex">
+                      <h1 className="text-sm text-gray-400 border border-y-0 border-l-0 pr-1">9017325355</h1>
+                       <h1 className="text-sm text-gray-400 ps-1 capitalize">opay</h1>
+                    </div>
+                    
+                  </div>
+              </div>
+              <div className="flex-col"><LiaGreaterThanSolid /></div>
             </div>
         </div>
     </div>

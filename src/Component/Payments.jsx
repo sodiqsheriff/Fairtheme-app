@@ -52,7 +52,7 @@ const Payments =()=>{
     setIsDarkMode(!isDarkMode);
 };
     return(
-      <div className='flex' > 
+      <div className='flex dark:bg-black h-full w-full' > 
       <div className="hidden md:hidden lg:flex lg:w-1/5">
         <Sidebar />
       </div>
@@ -106,8 +106,7 @@ const Payments =()=>{
 
   <div className="flex justify-between items-center ps-5 py-2 md:px-8 md:border md:border-x-0 md:border-t-0 lg:h-16 ">
       <div className='flex flex-col dark:text-white leading-tight'>
-        <h1 className="text-xs md:text-sm">Hello</h1>
-        <h1 className="text-md md:text-lg font-bold capitalize ">Olanrewaju</h1>
+        <h1 className="text-md md:text-lg font-bold capitalize ">payments</h1>
       </div>
       <div className={`dashboard ${isDarkMode ? 'dark:bg-gray-900' : 'bg-white'}`}>
     
@@ -132,14 +131,14 @@ const Payments =()=>{
   </div>
   </div>
   <div className="flex-col">
-     <h1 className="text-xl font-bold capitalize px-5 pt-7 pb-2">send money</h1>
+     <h1 className="text-xl font-bold capitalize px-5 pt-7 pb-2 dark:text-white">send money</h1>
      <div className="flex flex-col md:flex-row gap-10 px-5">
       <div className="flex items-center gap-2">
         <div className="">
         <img src={acct} alt="acct" />
         </div>
         <div className="">
-          <h1 className="font-semibold">To FairMoney Account</h1>
+          <h1 className="font-semibold dark:text-white">To FairMoney Account</h1>
           <h1 className="text-sm text-gray-400">Send money to a fair money user</h1>
         </div>
       </div>
@@ -148,20 +147,20 @@ const Payments =()=>{
         <img src={castle} alt="castle" />
         </div>
         <div className="">
-          <a href='/Payments/TransferPoint/*'  className="font-semibold">To Other Banks</a>
+          <a href='/Payments/TransferPoint/*'  className="font-semibold dark:text-white">To Other Banks</a>
           <h1 className="text-sm text-gray-400">Send money to a local bank</h1>
         </div>
       </div>
      </div>
      {/*utlilities */}
-     <h1 className="text-xl font-bold capitalize px-5 pt-7 pb-2">pay bills</h1>
+     <h1 className="text-xl font-bold capitalize px-5 pt-7 pb-2 dark:text-white">pay bills</h1>
      <div className="flex flex-col md:flex-row gap-10 px-5">
       <div className="flex items-center gap-2">
         <div className="">
         <img src={phone} alt="phone" />
         </div>
         <div className="">
-          <h1 className="font-semibold">Airtime Recharge</h1>
+          <h1 className="font-semibold dark:text-white">Airtime Recharge</h1>
           <h1 className="text-sm text-gray-400">Send money to a fair money user</h1>
         </div>
       </div>
@@ -170,7 +169,7 @@ const Payments =()=>{
         <img src={Data} alt="Data" />
         </div>
         <div className="">
-          <h1 className="font-semibold">To Other Banks</h1>
+          <h1 className="font-semibold dark:text-white">To Other Banks</h1>
           <h1 className="text-sm text-gray-400">Send money to a local bank</h1>
         </div>
       </div>
@@ -179,7 +178,7 @@ const Payments =()=>{
         <img src={light} alt="light" />
         </div>
         <div className="">
-          <h1 className="font-semibold">Electricity</h1>
+          <h1 className="font-semibold dark:text-white">Electricity</h1>
           <h1 className="text-sm text-gray-400">Send money to a local bank</h1>
         </div>
       </div>
@@ -190,7 +189,7 @@ const Payments =()=>{
         <img src={tv} alt="tv" />
         </div>
         <div className="">
-          <h1 className="font-semibold">Cable TV</h1>
+          <h1 className="font-semibold dark:text-white">Cable TV</h1>
           <h1 className="text-sm text-gray-400">Send money to a fair money user</h1>
         </div>
       </div>
@@ -199,7 +198,7 @@ const Payments =()=>{
         <img src={ternet} alt="ternet" />
         </div>
         <div className="">
-          <h1 className="font-semibold">Internet</h1>
+          <h1 className="font-semibold dark:text-white">Internet</h1>
           <h1 className="text-sm text-gray-400">Send money to a local bank</h1>
         </div>
       </div>

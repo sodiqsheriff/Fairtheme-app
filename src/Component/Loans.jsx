@@ -44,7 +44,7 @@ const Loans =()=>{
     setIsDarkMode(!isDarkMode);
 };
     return(
-      <div className='flex' > 
+      <div className='flex dark:bg-black h-screen w-full' > 
       <div className="hidden md:hidden lg:flex lg:w-1/5">
         <Sidebar />
       </div>
@@ -95,11 +95,9 @@ const Loans =()=>{
     
     )}
   </div>
-
   <div className="flex justify-between items-center ps-5 py-2 md:px-8 md:border md:border-x-0 md:border-t-0 lg:h-16 ">
       <div className='flex flex-col dark:text-white leading-tight'>
-        <h1 className="text-xs md:text-sm">Hello</h1>
-        <h1 className="text-md md:text-lg font-bold capitalize ">Olanrewaju</h1>
+        <h1 className="text-md md:text-lg font-bold capitalize ">loans</h1>
       </div>
       <div className={`dashboard ${isDarkMode ? 'dark:bg-gray-900' : 'bg-white'}`}>
     
@@ -125,25 +123,25 @@ const Loans =()=>{
   </div>
   <div className="flex-col">
    <div className="px-5 pt-7">
-    <h1 className="text-xl font-bold">Get started with your loan!</h1>
-    <h1 className="text-sm text-gray-400 pt-1 tracking-wide">Help us understand what you're looking for</h1>
+    <h1 className="text-xl font-bold dark:text-white">Get started with your loan!</h1>
+    <h1 className="text-sm text-gray-400 pt-1 tracking-wide dark:text-white">Help us understand what you're looking for</h1>
     <div className="">
       <header className="pt-3 pb-1 font-bold">How much do you need?</header>
-      <div className="flex ps-2 py-2 w-full lg:w-1/2 items-center gap-2 border border-gray-300 rounded">
+      <div className="flex ps-2 py-2 w-full lg:w-1/2 items-center gap-2 border border-gray-300 rounded dark:bg-white">
         <TbCurrencyNaira className='text-2xl' />
       <input type="text" placeholder='Type Here' className='placeholder-gray-400 border-none outline-none' />
       </div>
       <header className="pt-3 pb-1 font-bold">Monthly income</header>
-      <div className="flex ps-2 py-2 w-full lg:w-1/2 items-center gap-2 border border-gray-300 rounded">
+      <div className="flex ps-2 py-2 w-full lg:w-1/2 items-center gap-2 border border-gray-300 rounded dark:bg-white">
         <TbCurrencyNaira className='text-2xl' />
       <input type="text" placeholder='Type Here' className='placeholder-gray-400 border-none outline-none' />
       </div>
       <header className="pt-3 pb-1 font-bold">Email</header>
-      <div className="flex-col ps-2 py-2 w-full lg:w-1/2 items-center border border-gray-300 rounded">
+      <div className="flex-col ps-2 py-2 w-full lg:w-1/2 items-center border border-gray-300 rounded dark:bg-white">
       <input type="text" placeholder='olagoldlanre@gmail.com' className='placeholder-black font-semibold  border-none outline-none' />
       </div>
       <div className="bg-gray-500 w-full lg:w-1/2 mt-5 py-2 text-white text-center capitalize rounded">
-        <a href="">next</a>
+        <a href="/Loans/LoanPoint/*">next</a>
       </div>
     </div>
    </div>

@@ -54,7 +54,7 @@ const Sidebar = () => {
               </div>
         <div className="flex gap-3">
             <img src={stack} alt="stack" />
-            <a href='/Savings' className="">savings</a>
+            <a href='/Savings' className="active:text-blue-800">savings</a>
         </div>
         <div className="flex gap-3">
             <img src={safe} alt="safe" />

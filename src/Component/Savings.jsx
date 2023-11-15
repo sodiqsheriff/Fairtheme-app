@@ -19,6 +19,7 @@ import secure from '../assets/secure.png'
 import sett from '../assets/settings-4-line.png'
 import out from '../assets/rightarrow.png'
 import Sidebar from "./Sidebar"
+import { LiaGreaterThanSolid } from 'react-icons/lia';
 
 const Savings =()=>{
     const [isOpen, setIsOpen] = useState(false);
@@ -59,7 +60,7 @@ const Savings =()=>{
       {isOpen ?( <MdOutlineClose className='' />): <GiHamburgerMenu /> }
     </button>
     {isOpen  &&(
-      <div onClick={toggleMenu} className="flex flex-col absolute  top-0 right-0 bottom-0 w-1/2 h-full  px-5 pt-5 space-y-8 text-gray-400 capitalize font-semibold text-sm bg-white dark:bg-black">
+      <div onClick={toggleMenu} className="flex flex-col absolute  top-0 right-0  w-1/2 h-full  px-5 pt-5 space-y-8 text-gray-400 capitalize font-semibold text-sm bg-white dark:bg-black">
      <MdOutlineClose className='text-right text-5xl text-black dark:text-white' />
      <div className="flex gap-3">
           <img src={bank} alt="bank" />
@@ -102,8 +103,7 @@ const Savings =()=>{
 
   <div className="flex justify-between items-center ps-5 py-2 md:px-8 md:border md:border-x-0 md:border-t-0 lg:h-16 ">
       <div className='flex flex-col dark:text-white leading-tight'>
-        <h1 className="text-xs md:text-sm">Hello</h1>
-        <h1 className="text-md md:text-lg font-bold capitalize ">Olanrewaju</h1>
+        <h1 className="text-md md:text-lg font-bold capitalize ">savings</h1>
       </div>
       <div className={`dashboard ${isDarkMode ? 'dark:bg-gray-900' : 'bg-white'}`}>
     
@@ -129,80 +129,99 @@ const Savings =()=>{
   </div>
   <div className="flex-col">
    <div className="px-5">
-    <h1 className="text-2xl font-semibold py-2">Explore the savings options curated for you</h1>
-    <div className="flex flex-col bg-yellow-50 shadow-2xl border md:flex-row gap-2">
-      <div className="flex-col p-2">
-        <h1 className="text-sm font-bold">Grow your money!</h1>
-        <div className="flex-col space-y-2">
-          <div className="flex gap-5 items-center">
-            <div className="flex gap-2">
-              <h1 className="text-xs">Easy withdrawal anytime, anyday</h1>
-            </div>
-            <div className="flex gap-2 items-center">
-              <h1 className="text-xs">10% per annum</h1>
-            </div>
+    <h1 className="text-lg font-semibold py-5">Explore the savings options curated for you</h1>
+    <div className="flex flex-col md:flex-row gap-5">
+      <div className="flex-col bg-yellow-50  border w-full md:w-1/2 p-5 rounded-xl shadow-xl dark:bg-gray-950">
+        <h1 className="text-sm font-bold dark:text-white">Grow your money!</h1>
+        <div className="flex text-xs py-5 font-semibold gap-7 dark:text-white">
+        <div className="flex-col space-y-4">
+          <div className="flex gap-2">
+             <h1>Ease withdrawal anytime,anyday </h1>
           </div>
+          <div className="flex gap-2">
+             <h1>Safe and secure </h1>
+          </div>
+          <div className="flex gap-2">
+             <h1>Flexible and Cost Effective</h1>
+          </div>
+          </div>
+          <div className="flex-col space-y-4">
+          <div className="flex gap-2">
+             <h1>10% per annum </h1>
+          </div>
+          <div className="flex gap-2">
+             <h1>Daily interest earnings </h1>
+          </div>
+          <div className="flex gap-2">
+             <h1>No fees, Reliable</h1>
+          </div>
+          </div>
+        
+
         </div>
-        <div className="flex-col space-y-2">
-          <div className="flex gap-5 items-center">
-            <div className="flex gap-2">
-              <h1 className="text-xs">Safe and Secure</h1>
-            </div>
-            <div className="flex gap-2 items-center">
-              <h1 className="text-xs">Daily interest earnings</h1>
-            </div>
+        <div className="flex-col">
+          <h1 className="pb-5 text-2xl font-bold dark:text-white">FairSave</h1>
+          <h1 className="text-xs pb-5 tracking-wide text-gray-400">
+            When you think of a high interest savings account,FairSave stands as 
+            <br />the ultimate saving platform for you. FairSave is our savings product
+            <br />designed to help people save and make money everyday.
+          </h1>
+          <div className="flex items-center gap-2  capitalize font-bold dark:text-white">
+            <h1>Explore</h1>
+            <LiaGreaterThanSolid className='text-sm font-bold' />
           </div>
-        </div>
-        <div className="flex-col space-y-2">
-          <div className="flex gap-5 items-center">
-            <div className="flex gap-2">
-              <h1 className="text-xs">Flexible and cost effective</h1>
-            </div>
-            <div className="flex gap-2 items-center">
-              <h1 className="text-xs">No fees, Reliable</h1>
-            </div>
-          </div>
+
         </div>
 
       </div>
-      <div className="flex flex-col bg-yellow-50 shadow-2xl border md:flex-row gap-2">
-      <div className="flex-col p-2">
-        <h1 className="text-sm font-bold">Grow your money!</h1>
-        <div className="flex-col space-y-2">
-          <div className="flex gap-5 items-center">
-            <div className="flex gap-2">
-              <h1 className="text-xs">Easy withdrawal anytime, anyday</h1>
-            </div>
-            <div className="flex gap-2 items-center">
-              <h1 className="text-xs">10% per annum</h1>
-            </div>
+      <div className="flex-col bg-yellow-50  border w-full md:w-1/2 p-5 rounded-xl shadow-xl dark:bg-gray-950">
+        <h1 className="text-sm font-bold dark:text-white">Grow your money!</h1>
+        <div className="flex text-xs py-5 font-semibold gap-7 dark:text-white">
+        <div className="flex-col space-y-4">
+          <div className="flex gap-2">
+             <h1>Ease withdrawal anytime,anyday </h1>
           </div>
+          <div className="flex gap-2">
+             <h1>Safe and secure </h1>
+          </div>
+          <div className="flex gap-2">
+             <h1>Flexible and Cost Effective</h1>
+          </div>
+          </div>
+          <div className="flex-col space-y-4">
+          <div className="flex gap-2">
+             <h1>10% per annum </h1>
+          </div>
+          <div className="flex gap-2">
+             <h1>Daily interest earnings </h1>
+          </div>
+          <div className="flex gap-2">
+             <h1>No fees, Reliable</h1>
+          </div>
+          </div>
+        
+
         </div>
-        <div className="flex-col space-y-2">
-          <div className="flex gap-5 items-center">
-            <div className="flex gap-2">
-              <h1 className="text-xs">Safe and Secure</h1>
-            </div>
-            <div className="flex gap-2 items-center">
-              <h1 className="text-xs">Daily interest earnings</h1>
-            </div>
+        <div className="flex-col">
+          <h1 className="pb-5 text-2xl font-bold dark:text-white">FairSave</h1>
+          <h1 className="text-xs pb-5 tracking-wide text-gray-400">
+            When you think of a high interest savings account,FairSave stands as 
+            <br />the ultimate saving platform for you. FairSave is our savings product
+            <br />designed to help people save and make money everyday.
+          </h1>
+          <div className="flex items-center gap-2  capitalize font-bold dark:text-white">
+            <h1>Explore</h1>
+            <LiaGreaterThanSolid className='text-sm font-bold' />
           </div>
-        </div>
-        <div className="flex-col space-y-2">
-          <div className="flex gap-5 items-center">
-            <div className="flex gap-2">
-              <h1 className="text-xs">Flexible and cost effective</h1>
-            </div>
-            <div className="flex gap-2 items-center">
-              <h1 className="text-xs">No fees, Reliable</h1>
-            </div>
-          </div>
+
         </div>
 
       </div>
+    
     </div>
-    </div>
-      
+      <div className="flex justify-center mx-auto rounded-2xl bg-green-200 p-1 w-80 mb-36 mt-5">
+        <h1 className="text-xs text-center">Licensed by <b className='text-green-700'>CBN. Deposits insured by <b className='text-green-700'>NDIC</b></b></h1>
+      </div>
    </div>
   </div>
 
