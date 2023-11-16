@@ -18,6 +18,10 @@ import stack from '../assets/stack-line.png'
 import secure from '../assets/secure.png'
 import sett from '../assets/settings-4-line.png'
 import out from '../assets/rightarrow.png'
+import spot from '../assets/spot.png'
+import safee from '../assets/lock.png'
+import flex from '../assets/flexibl.png'
+
 import Sidebar from "./Sidebar"
 import { LiaGreaterThanSolid } from 'react-icons/lia';
 
@@ -136,23 +140,29 @@ const Savings =()=>{
         <div className="flex text-xs py-5 font-semibold gap-7 dark:text-white">
         <div className="flex-col space-y-4">
           <div className="flex gap-2">
+              <img src={spot} alt="" />
              <h1>Ease withdrawal anytime,anyday </h1>
           </div>
           <div className="flex gap-2">
+          <img src={safee} alt="" />
              <h1>Safe and secure </h1>
           </div>
           <div className="flex gap-2">
+          <img src={flex} alt="" />
              <h1>Flexible and Cost Effective</h1>
           </div>
           </div>
           <div className="flex-col space-y-4">
           <div className="flex gap-2">
+          {/* <img src={scale} alt="" /> */}
              <h1>10% per annum </h1>
           </div>
           <div className="flex gap-2">
+          {/* <img src={daily} alt="" /> */}
              <h1>Daily interest earnings </h1>
           </div>
           <div className="flex gap-2">
+          {/* <img src={tree} alt="" /> */}
              <h1>No fees, Reliable</h1>
           </div>
           </div>

@@ -133,10 +133,10 @@ const TransferPoint =()=>{
     </div>
     <div className="flex-col">
       <a href="/Payments/*" className='flex gap-1 items-center font-semibold capitalize p-5 dark:text-white'><LiaLessThanSolid />back</a>
-      <h1 className="font-semibold text-lg capitalize px-5">receiver's account</h1>
+      <h1 className="font-semibold text-lg capitalize px-5 dark:text-white">receiver's account</h1>
       <div className="px-5 pt-3 space-y-4">
         <input type="text" placeholder='10 Digit Account Number' className='placeholder-gray-400 border border-gray-300 outline-none p-2 rounded w-full md:w-1/2' />
-        <div className="flex p-2 items-center gap-2 border border-gray-300 rounded w-full md:w-1/2">
+        <div className="flex p-2 items-center gap-2 border border-gray-300 rounded w-full md:w-1/2 dark:bg-white">
             <img src={bank} alt='bank' className='w-5' />
             <input type='text' placeholder='Select Bank' className='placeholder-gray-400 border-none outline-none' />
         </div>
@@ -147,7 +147,7 @@ const TransferPoint =()=>{
         </div>
         <div className="flex-col px-5 pt-5">
             <div className="flex gap-5 pb-5">
-                <h1 className="font-bold capitalize">recent transfers</h1>
+                <h1 className="font-bold capitalize dark:text-white">recent transfers</h1>
                 <h1 className="font-bold text-gray-400 capitalize">beneficiaries</h1>
             </div>
             <div className="flex items-center justify-between border border-x-0 border-t-0 pb-2 w-full md:w-1/2">
@@ -156,7 +156,7 @@ const TransferPoint =()=>{
                   <img src={opay} alt="" />
                   </div>
                   <div className="flex-col">
-                    <h1 className="font-bold capitalize">olamilekan afolabi olanrewaju</h1>
+                    <h1 className="font-bold capitalize dark:text-white">olamilekan afolabi olanrewaju</h1>
                     <div className="flex">
                       <h1 className="text-sm text-gray-400 border border-y-0 border-l-0 pr-1">9017325355</h1>
                        <h1 className="text-sm text-gray-400 ps-1 capitalize">opay</h1>
@@ -164,7 +164,7 @@ const TransferPoint =()=>{
                     
                   </div>
               </div>
-              <div className="flex-col"><LiaGreaterThanSolid /></div>
+              <div className="flex-col dark:text-white"><LiaGreaterThanSolid /></div>
             </div>
                   <div className="flex items-center justify-between border border-x-0 border-t-0 pb-2 w-full md:w-1/2">
               <div className="flex items-center gap-2 py-2 ">
@@ -172,7 +172,7 @@ const TransferPoint =()=>{
                   <img src={wema} alt="" />
                   </div>
                   <div className="flex-col">
-                    <h1 className="font-bold capitalize">olamilekan afolabi olanrewaju</h1>
+                    <h1 className="font-bold capitalize dark:text-white">oluwanishola ibrahim</h1>
                     <div className="flex">
                       <h1 className="text-sm text-gray-400 border border-y-0 border-l-0 pr-1">9017325355</h1>
                        <h1 className="text-sm text-gray-400 ps-1 capitalize">opay</h1>
@@ -180,7 +180,7 @@ const TransferPoint =()=>{
                     
                   </div>
               </div>
-              <div className="flex-col"><LiaGreaterThanSolid /></div>
+              <div className="flex-col dark:text-white"><LiaGreaterThanSolid /></div>
             </div>
                   <div className="flex items-center justify-between border border-x-0 border-t-0 pb-2 w-full md:w-1/2">
               <div className="flex items-center gap-2 py-2 ">
@@ -188,7 +188,7 @@ const TransferPoint =()=>{
                   <img src={fair} alt="" />
                   </div>
                   <div className="flex-col">
-                    <h1 className="font-bold capitalize">olamilekan afolabi olanrewaju</h1>
+                    <h1 className="font-bold capitalize dark:text-white">sodiq sheriff oluwatobi</h1>
                     <div className="flex">
                       <h1 className="text-sm text-gray-400 border border-y-0 border-l-0 pr-1">9017325355</h1>
                        <h1 className="text-sm text-gray-400 ps-1 capitalize">opay</h1>
@@ -196,7 +196,7 @@ const TransferPoint =()=>{
                     
                   </div>
               </div>
-              <div className="flex-col"><LiaGreaterThanSolid /></div>
+              <div className="flex-col dark:text-white"><LiaGreaterThanSolid /></div>
             </div>
                   <div className="flex items-center justify-between border border-x-0 border-t-0 pb-2 w-full md:w-1/2">
               <div className="flex items-center gap-2 py-2 ">
@@ -204,7 +204,7 @@ const TransferPoint =()=>{
                   <img src={opay} alt="" />
                   </div>
                   <div className="flex-col">
-                    <h1 className="font-bold capitalize">olamilekan afolabi olanrewaju</h1>
+                    <h1 className="font-bold capitalize dark:text-white">olamilekan afolabi olanrewaju</h1>
                     <div className="flex">
                       <h1 className="text-sm text-gray-400 border border-y-0 border-l-0 pr-1">9017325355</h1>
                        <h1 className="text-sm text-gray-400 ps-1 capitalize">opay</h1>
@@ -212,7 +212,7 @@ const TransferPoint =()=>{
                     
                   </div>
               </div>
-              <div className="flex-col"><LiaGreaterThanSolid /></div>
+              <div className="flex-col dark:text-white"><LiaGreaterThanSolid /></div>
             </div>
                   <div className="flex items-center justify-between border border-x-0 border-t-0 w-full md:w-1/2">
               <div className="flex items-center gap-2 py-2 ">
@@ -220,7 +220,7 @@ const TransferPoint =()=>{
                   <img src={wema} alt="" />
                   </div>
                   <div className="flex-col">
-                    <h1 className="font-bold capitalize">olamilekan afolabi olanrewaju</h1>
+                    <h1 className="font-bold capitalize dark:text-white">aluko kehinde monsuru</h1>
                     <div className="flex">
                       <h1 className="text-sm text-gray-400 border border-y-0 border-l-0 pr-1">9017325355</h1>
                        <h1 className="text-sm text-gray-400 ps-1 capitalize">opay</h1>
@@ -228,7 +228,7 @@ const TransferPoint =()=>{
                     
                   </div>
               </div>
-              <div className="flex-col"><LiaGreaterThanSolid /></div>
+              <div className="flex-col dark:text-white"><LiaGreaterThanSolid /></div>
             </div>
         </div>
     </div>

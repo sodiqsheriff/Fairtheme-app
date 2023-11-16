@@ -1,4 +1,4 @@
-
+import {useState} from 'react';
 import logo from '../assets/fairmoney-logo.png'
 import bank from '../assets/bank-line.png'
 import jet from '../assets/send-plane-line.png'
@@ -28,8 +28,15 @@ const Sidebar = () => {
         { path: "/Savings", element: <Savings /> },
         { path: "/Settings", element: <Settings /> }
         // Add more subpage routes here
-      ]);
-     
+      ]); 
+       const [selectedLink, setSelectedLink] = useState('overview');
+
+      const handleLinkClick = (link) => {
+        setSelectedLink(link);
+      };
+    
+      const getLinkColor = (link) => (selectedLink === link ? 'text-blue-800' : 'text-gray-400');
+   
    
     return(
 
@@ -42,27 +49,33 @@ const Sidebar = () => {
     <div className="p-5 space-y-8 pt-10 text-gray-400 capitalize font-semibold md:text-sm lg:text-md">
         <div className="flex gap-3">
             <img src={bank} alt="bank" />
-            <a href='/Overview' className="">overview</a>
+            <a href='/Overview' className={`mr-4 ${getLinkColor('Overview')}`}
+        onClick={() => handleLinkClick('Overview')}>overview</a>
         </div>
         <div className="flex gap-3">
             <img src={jet} alt="jet" />
-            <a href='/Payments' className="">Payments</a>
+            <a href='/Payments' className={`mr-4 ${getLinkColor('Payments')}`}
+        onClick={() => handleLinkClick('Payments')}>Payments</a>
         </div>
         <div className="flex gap-3">
             <img src={coin} alt="coin" />
-            <a href='/Loans' className="">loans</a>    
+            <a href='/Loans' className={`mr-4 ${getLinkColor('Loans')}`}
+        onClick={() => handleLinkClick('Loans')}>loans</a>    
               </div>
         <div className="flex gap-3">
             <img src={stack} alt="stack" />
-            <a href='/Savings' className="active:text-blue-800">savings</a>
+            <a href='/Savings'className={`mr-4 ${getLinkColor('Savings')}`}
+        onClick={() => handleLinkClick('Savings')}>savings</a>
         </div>
         <div className="flex gap-3">
             <img src={safe} alt="safe" />
-            <a href='/Method' className="">Payments method</a>
+            <a href='/Method' className={` ${getLinkColor('Method')}`}
+        onClick={() => handleLinkClick('Method')}>Payments method</a>
         </div>
         <div className="flex gap-3">
             <img src={sett} alt="sett" />
-            <a href="/Settings">settings</a>
+            <a href="/Settings" className={`mr-4 ${getLinkColor('Settings')}`}
+        onClick={() => handleLinkClick('Settings')}>settings</a>
         </div>
         <div className="pt-96 space-y-3">
             <div className="flex items-center gap-3">

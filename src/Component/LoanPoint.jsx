@@ -11,6 +11,11 @@ import {FiSearch, FiDownload}  from 'react-icons/fi';
 import {BsFilter} from 'react-icons/bs'
 import profile from '../assets/Profile.png'
 import logo from '../assets/fairmoney-logo.png'
+import high from '../assets/currency-line.png'
+import installment from '../assets/calander.png'
+import overdue from '../assets/reddet.png'
+import debit from '../assets/redcard.png'
+import bureaus from '../assets/red-line.png'
 import fair from '../assets/fair-icon.png'
 import save from '../assets/stack-line.png'
 import opay from '../assets/opay.png'
@@ -136,14 +141,14 @@ const LoanPoint = () => {
   <a href="/Loans/*" className='flex gap-1 items-center font-semibold capitalize p-5 dark:text-white'><LiaLessThanSolid />back</a>
   <h1 className="font-bold text-lg px-5 dark:text-white">if you pay on time...</h1>
   <div className="flex items-center px-5 pt-5">
-    <div className="flex-col"></div>
+    <div className="flex-col ps-3 pr-5"><img src={high} alt =''/></div>
     <div className="flex-col space-y-1 text-green-500">
         <h1 className="text-sm capitalize font-semibold">higher amounts</h1>
         <h1 className="text-xs text-gray-400">Up to #1,000,000</h1>
     </div>
   </div>
   <div className="flex items-center px-5 pt-5">
-    <div className="flex-col"></div>
+    <div className="flex-col ps-3 pr-5"><img src={installment} alt =''/></div>
     <div className="flex-col space-y-1 text-green-500">
         <h1 className="text-sm capitalize font-semibold">installments</h1>
         <h1 className="text-xs text-gray-400">spread your payments</h1>
@@ -151,14 +156,14 @@ const LoanPoint = () => {
   </div>
   <h1 className="font-bold text-lg p-5 dark:text-white">if you pay late...</h1>
   <div className="flex items-center px-5 pt-5">
-    <div className="flex-col"></div>
+    <div className="flex-col ps-3 pr-5"><img src={debit} alt =''/></div>
     <div className="flex-col space-y-1 text-red-500">
         <h1 className="text-sm capitalize font-semibold">automatic debit</h1>
         <h1 className="text-xs text-gray-400">on your bank account</h1>
     </div>
   </div>
   <div className="flex items-center px-5 pt-5">
-    <div className="flex-col"></div>
+    <div className="flex-col ps-3 pr-5"><img src={overdue} alt =''/></div>
     <div className="flex-col space-y-1 text-red-500">
         <h1 className="text-sm capitalize font-semibold">interest for overdue amount</h1>
         <h1 className="text-xs text-gray-400">if your payments is delayed, a penalty fee will be charged in accordance
@@ -166,7 +171,7 @@ const LoanPoint = () => {
     </div>
   </div>
   <div className="flex items-center px-5 pt-5">
-    <div className="flex-col"></div>
+    <div className="flex-col ps-3 pr-5"><img src={bureaus} alt =''/></div>
     <div className="flex-col space-y-1 text-red-500">
         <h1 className="text-sm capitalize font-semibold">credit bureaus</h1>
         <h1 className="text-xs text-gray-400">spread your payments</h1>
@@ -180,7 +185,7 @@ const LoanPoint = () => {
   </h1>
   <div className="pt-3 px-5 flex items-center gap-1 font-bold dark:text-white">
     <input type="checkbox" name="" id="" />
-    <h1>Read our terms of use and privacy policy online.</h1>
+    <h1 className='text-sm'>Read our terms of use and privacy policy online.</h1>
   </div>
   <div className="bg-gray-500 md:w-4/5 lg:w-1/2 mt-5 mb-36 py-2 mx-5 text-white text-center capitalize rounded">
         <a href="*">next</a>

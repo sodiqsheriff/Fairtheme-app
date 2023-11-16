@@ -9,6 +9,9 @@ import { BsArrowRightShort } from 'react-icons/bs'
 import {FiSearch, FiDownload}  from 'react-icons/fi';
 import {BsFilter} from 'react-icons/bs'
 import profile from '../assets/Profile.png'
+import wema from '../assets/wemabank.png'
+import mtn from '../assets/mtn.png'
+import opay from '../assets/opay.png'
 import logo from '../assets/fairmoney-logo.png'
 import save from '../assets/stack-line.png'
 import bank from '../assets/bank-line.png'
@@ -246,7 +249,9 @@ const Overview = () =>{
                </thead>
                <tbody className='border border-gray-300 '>
           <tr>
-            <td className='p-5'>PAYSTACK CHECKOUT</td>
+            <td className='flex items-center gap-2 p-5'>
+              <img src={wema} alt='wema' />
+              PAYSTACK CHECKOUT</td>
             <td>Money received</td>
             <td>June 21th, 10:30AM</td>
             <td>+2,250.00</td>
@@ -255,7 +260,9 @@ const Overview = () =>{
           </tbody>
           <tbody className='border border-gray-300 '>
           <tr>
-            <td className='p-5'>MTN MOBILE TOPUP</td>
+            <td className='flex items-center gap-2 p-5'>
+              <img src={mtn} alt="mtn" />
+              MTN MOBILE TOPUP</td>
             <td>Airtime Recharge</td>
             <td>June 11th, 01:00AM</td>
             <td>+5,000.00</td>
@@ -264,7 +271,9 @@ const Overview = () =>{
           </tbody>
           <tbody className='border border-gray-300 '>
           <tr>
-            <td className='p-5'>AFOLABI OLAMILEKAN OLANREWAJU</td>
+            <td className='flex items-center gap-2 p-5'>
+              <img src={opay} alt='opay' />
+              AFOLABI OLAMILEKAN OLANREWAJU</td>
             <td>Money Sent</td>
             <td>June 10th, 09:10AM</td>
             <td>+1,000.00</td>
@@ -273,7 +282,9 @@ const Overview = () =>{
           </tbody>
           <tbody className='border border-gray-300 p-5'>
           <tr className=''>
-            <td className='p-5'>SODIQ SHERIFF OLUWATOBI</td>
+            <td className='flex items-center gap-2 p-5'>
+              <img src={opay} alt="opay" />
+              SODIQ SHERIFF OLUWATOBI</td>
             <td>Money Received</td>
             <td>June 7th, 01:30AM</td>
             <td>+20,000.00</td>
