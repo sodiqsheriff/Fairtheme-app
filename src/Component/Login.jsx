@@ -102,7 +102,7 @@ const Login = () => {
 
         <div className=''>
         <h1 className="text-2xl text-center font-bold md:text-3xl dark:text-white pb-1">Welcome back!</h1>
-        <h2 className="text-md pb-1 text-gray-400 tracking-wider md:text-xl text-center md:pb-3">Continue to send and receive money with ease.</h2>
+        <h2 className="text-xs pb-1 text-gray-400 tracking-wider md:text-md md:text-xl text-center md:pb-3">Continue to send and receive money with ease.</h2>
         </div>
 
         <div className="flex flex-col justify-center py-2 md:py-4">
