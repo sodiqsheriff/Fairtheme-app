@@ -4,6 +4,7 @@ import { MdOutlineClose } from 'react-icons/md';
 import { IoSunnyOutline, IoMoonOutline } from 'react-icons/io5';
 import { BsBell } from 'react-icons/bs'
 import {  FaHeadphones } from 'react-icons/fa'
+import bank from '../assets/bank-line.png'
 import acct from '../assets/fair-icon.png'
 import castle from '../assets/fin.png'
 import phone from '../assets/airtime.png'
@@ -50,7 +51,7 @@ if (isDarkMode) {
 setIsDarkMode(!isDarkMode);
 };
 return(
-  <div className='flex dark:bg-black h-full w-full' > 
+  <div className='flex dark:bg-black h-full w-full pb-16' > 
 <div className="hidden md:hidden lg:flex lg:w-1/5">
     <Sidebar />
   </div>

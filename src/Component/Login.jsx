@@ -66,7 +66,7 @@ const Login = () => {
   };
  
   return (
-    <>
+  
   <div className="dark:bg-gray-900 h-full w-full">
   <h1 className="text-white"></h1>
   <div className="theme-switcher flex items-center dark:bg-black p-2 rounded-md shadow-inner">
@@ -90,7 +90,7 @@ const Login = () => {
     </div>
     {/* Other content of your Dashboard */}
     
-  </div>
+
  
 
     
@@ -157,7 +157,7 @@ const Login = () => {
         </div>
 
     </div>
-    </>
+    </div>
   )
 }
 
