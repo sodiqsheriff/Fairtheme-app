@@ -52,7 +52,7 @@ const toggleTheme = () => {
 };
 
   return(
-      <div className='flex dark:bg-black h-full w-full' > 
+      <div className='flex dark:bg-black h-full md:h-screen lg:h-full w-full pb-5' > 
       <div className="hidden md:hidden lg:flex lg:w-1/5">
         <Sidebar />
       </div>
@@ -132,7 +132,7 @@ const toggleTheme = () => {
   </div>
   </div>
   <div className="flex-col">
-    <div className="flex-col p-5  space-y-3 w-full md:flex md:flex-row md:justify-between">
+    <div className="flex-col p-5  space-y-30 w-full md:flex md:flex-row md:justify-between">
         <div className="flex-col">
           <h1 className=" md:text-2xl font-semibold text-black dark:text-white">Overview</h1>
           <h1 className="text-sm text-gray-500 md:text-xs">Send money and receive money with ease</h1>
@@ -146,7 +146,7 @@ const toggleTheme = () => {
       </div>
       
       <div className="block space-y-4 md:grid grid-cols-2 md:space-y-0 lg:flex p-5 w-full gap-5 lg:space-y-0">
-      <div className="w-full bg-black text-white  shadow-2xl rounded hover:opacity-50 p-5 dark:bg-gray-950">
+      <div className="w-full bg-black text-white  shadow-2xl rounded  p-5 dark:bg-gray-950">
           <div className="flex justify-between">
           <h1 className='text-lg tracking-wider'>5910483467</h1>
           <BsArrowRightShort className='text-2xl' />
@@ -160,7 +160,7 @@ const toggleTheme = () => {
           
           
         </div>
-        <div className="bg-green-600 text-white  w-full shadow-2xl rounded hover:opacity-50 p-5 dark:bg-gray-950">
+        <div className="bg-green-600 text-white  w-full shadow-2xl rounded  p-5 dark:bg-gray-950">
           <div className="flex justify-between">
           <h1 className='text-xl font-semibold'>Loans</h1>
           <BsArrowRightShort className='text-2xl' />
@@ -168,7 +168,7 @@ const toggleTheme = () => {
           <h1 className="text-xs pt-7">Available balance</h1>
           <h1 className="text-3xl font-semibold tracking-wider">#527,500.00</h1>
           </div>
-            <div className="bg-blue-500 text-white  shadow-2xl  w-full rounded hover:opacity-50 p-5 dark:bg-gray-900">
+            <div className="bg-blue-500 text-white  shadow-2xl  w-full rounded p-5 dark:bg-gray-900">
             <div className="flex justify-between">
           <h1 className='text-xl font-semibold'>Savings</h1>
           <BsArrowRightShort className='text-2xl' />
@@ -178,7 +178,7 @@ const toggleTheme = () => {
             </div>
       </div>
             <div className="flex flex-col w-full space-y-4 gap-0 md:flex md:flex-row md:w-full p-5 md:gap-4 md:space-y-0">
-          <div className="flex w-full bg-green-100 rounded border-gray-300 hover:opacity-50 p-5  md:flex items-center gap-3 md:w-full dark:bg-gray-950 dark:shadow-2xl dark:text-white">
+          <div className="flex w-full bg-green-100 rounded border-gray-300  p-5  md:flex items-center gap-3 md:w-full dark:bg-gray-950 dark:shadow-2xl dark:text-white">
             <BsBell className='text-6xl md:text-2xl' />
             <span>
             <h1 className="text-xl text-black pb-2 dark:text-white">Upcoming repayment</h1>
@@ -186,7 +186,7 @@ const toggleTheme = () => {
           </span>
           <a href="" className='px-12 py-2 text-white font-semibold bg-black rounded-2xl shadow-2xl'>Repay</a>
           </div>
-          <div className="flex w-full bg-yellow-200 rounded border-gray-300 hover:opacity-50 p-5  md:flex items-center gap-3 md:w-full dark:text-white dark:bg-gray-950">
+          <div className="flex w-full bg-yellow-200 rounded border-gray-300 p-5  md:flex items-center gap-3 md:w-full dark:text-white dark:bg-gray-950">
           <img src={save} alt="" />
           <span>
             <h1 className="text-xl text-black pb-2 dark:text-white">Earn 27% on your savings</h1>

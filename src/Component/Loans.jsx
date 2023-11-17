@@ -127,18 +127,18 @@ const Loans =()=>{
     <h1 className="text-sm text-gray-400 pt-1 tracking-wide dark:text-white">Help us understand what you're looking for</h1>
     <div className="">
       <header className="pt-3 pb-1 font-bold">How much do you need?</header>
-      <div className="flex ps-2 py-2 w-full lg:w-1/2 items-center gap-2 border border-gray-300 rounded dark:bg-white">
-        <TbCurrencyNaira className='text-2xl' />
-      <input type="text" placeholder='Type Here' className='placeholder-gray-400 border-none outline-none' />
+      <div className="flex ps-2 py-2 w-full lg:w-1/2 items-center gap-2 border border-gray-300 rounded ">
+        <TbCurrencyNaira className='text-2xl dark:text-white' />
+      <input type="text" placeholder='Type Here' className='dark:bg-black dark:text-white placeholder-gray-400 border-none outline-none' />
       </div>
       <header className="pt-3 pb-1 font-bold">Monthly income</header>
-      <div className="flex ps-2 py-2 w-full lg:w-1/2 items-center gap-2 border border-gray-300 rounded dark:bg-white">
-        <TbCurrencyNaira className='text-2xl' />
-      <input type="text" placeholder='Type Here' className='placeholder-gray-400 border-none outline-none' />
+      <div className="flex ps-2 py-2 w-full lg:w-1/2 items-center gap-2 border border-gray-300 rounded ">
+        <TbCurrencyNaira className='text-2xl dark:text-white' />
+      <input type="text" placeholder='Type Here' className='dark:bg-black dark:text-white placeholder-gray-400 border-none outline-none' />
       </div>
       <header className="pt-3 pb-1 font-bold">Email</header>
-      <div className="flex-col ps-2 py-2 w-full lg:w-1/2 items-center border border-gray-300 rounded dark:bg-white">
-      <input type="text" placeholder='olagoldlanre@gmail.com' className='placeholder-black font-semibold  border-none outline-none' />
+      <div className="flex-col ps-2 py-2 w-full lg:w-1/2 items-center border border-gray-300 rounded ">
+      <input type="text" placeholder='olagoldlanre@gmail.com' className='dark:placeholder-gray-400 dark:bg-black dark:text-white placeholder-black font-semibold  border-none outline-none' />
       </div>
       <div className="bg-gray-500 w-full lg:w-1/2 mt-5 py-2 text-white text-center capitalize rounded">
         <a href="/Loans/LoanPoint/*">next</a>

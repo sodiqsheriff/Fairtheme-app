@@ -135,10 +135,10 @@ const TransferPoint =()=>{
       <a href="/Payments/*" className='flex gap-1 items-center font-semibold capitalize p-5 dark:text-white'><LiaLessThanSolid />back</a>
       <h1 className="font-semibold text-lg capitalize px-5 dark:text-white">receiver's account</h1>
       <div className="px-5 pt-3 space-y-4">
-        <input type="text" placeholder='10 Digit Account Number' className='placeholder-gray-400 border border-gray-300 outline-none p-2 rounded w-full md:w-1/2' />
-        <div className="flex p-2 items-center gap-2 border border-gray-300 rounded w-full md:w-1/2 dark:bg-white">
+        <input type="text" placeholder='10 Digit Account Number' className='dark:bg-black dark:text-white marker:placeholder-gray-400 border border-gray-300 outline-none p-2 rounded w-full md:w-1/2' />
+        <div className="flex p-2 items-center gap-2 border border-gray-300 rounded w-full md:w-1/2 ">
             <img src={bank} alt='bank' className='w-5' />
-            <input type='text' placeholder='Select Bank' className='placeholder-gray-400 border-none outline-none' />
+            <input type='text' placeholder='Select Bank' className='dark:bg-black dark:text-white marker:placeholder-gray-400 border-none outline-none' />
         </div>
         <div className="bg-gray-400 p-2 text-white font-semibold  text-center w-full md:w-1/2 rounded">
         <a href="" className=''>Proceed</a>

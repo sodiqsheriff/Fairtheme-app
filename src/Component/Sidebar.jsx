@@ -44,7 +44,7 @@ const Sidebar = () => {
 
 <div className="flex w-full h-full dark:bg-black">
 
-<div className="hidden md:hidden lg:flex flex-col border border-y-0 border-l-0 ">
+<div className="hidden md:hidden lg:flex flex-col border border-y-0 border-l-0">
     <div className="px-5 py-2 h-16 border border-x-0 border-t-0 "><img src={logo} alt="logo" className='w-4/5'/></div>
     <div className="p-5 space-y-8 pt-10 text-gray-400 capitalize font-semibold md:text-sm lg:text-md">
         <div className="flex gap-3">

@@ -57,7 +57,7 @@ if (isDarkMode) {
 setIsDarkMode(!isDarkMode);
 };
 return(
-  <div className='flex' > 
+  <div className='flex h-full md:h-screen lg:h-full w-full' > 
   <div className="hidden md:hidden lg:flex lg:w-1/5">
     <Sidebar />
   </div>
