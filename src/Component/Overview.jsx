@@ -63,43 +63,44 @@ const toggleTheme = () => {
       {isOpen ?( <MdOutlineClose className='' />): <GiHamburgerMenu /> }
     </button>
     {isOpen  &&(
-      <div onClick={toggleMenu} className=" flex-col absolute  top-0 right-0 bottom-0 w-1/2 h-screen  px-5 pt-5 space-y-8 text-gray-400 capitalize font-semibold text-sm bg-white dark:bg-black">
-    <MdOutlineClose className='text-right text-5xl text-black dark:text-white' />
-    <div className="flex gap-3">
-          <img src={bank} alt="bank" />
-          <a href='/Overview' className="">overview</a>
-      </div>
-      <div className="flex gap-3">
-          <img src={jet} alt="jet" />
-          <a href='/Payments' className="">Payments</a>
-      </div>
-      <div className="flex gap-3">
-          <img src={coin} alt="coin" />
-          <a href='/Loans' className="">loans</a>    
-            </div>
-      <div className="flex gap-3">
-          <img src={stack} alt="stack" />
-          <a href='/Savings' className="">savings</a>
-      </div>
-      <div className="flex gap-3">
-          <img src={secure} alt="secure" />
-          <a href='/Method' className="">Payments method</a>
-      </div>
-      <div className="flex gap-3">
-          <img src={sett} alt="sett" />
-          <a href="/Settings">settings</a>
-      </div>
-      <div className="mt-auto space-y-3">
-          <div className="flex items-center gap-3">
-              <FaHeadphones className='text-gray-400 text-2xl' />
-              <a href="">Chat</a>
-          </div>
-          <div className="flex items-center gap-3">
-              <img src={out} alt="out" />
-              <a href="/">Log out</a>
-          </div>
-      </div>
-  </div>
+   <div onClick={toggleMenu} className="flex flex-col absolute  top-0 right-0 w-1/2 h-full  px-5 pt-5 space-y-8 text-gray-400 capitalize font-semibold text-sm bg-white dark:bg-black">
+   <MdOutlineClose className='text-right text-5xl text-black dark:text-white' />
+   <div className="flex gap-3">
+       <img src={bank} alt="bank" />
+       <a href='/Overview' className="">overview</a>
+   </div>
+   <div className="flex gap-3">
+       <img src={jet} alt="jet" />
+       <a href='/Payments' className="">Payments</a>
+   </div>
+   <div className="flex gap-3">
+       <img src={coin} alt="coin" />
+       <a href='/Loans' className="">loans</a>    
+         </div>
+   <div className="flex gap-3">
+       <img src={stack} alt="stack" />
+       <a href='/Savings' className="">savings</a>
+   </div>
+   <div className="flex gap-3">
+       <img src={secure} alt="secure" />
+       <a href='/Method' className="">Payments method</a>
+   </div>
+   <div className="flex gap-3">
+       <img src={sett} alt="sett" />
+       <a href="/Settings">settings</a>
+   </div>
+   <div className="mt-auto space-y-3">
+       <div className="flex items-center gap-3">
+           <FaHeadphones className='text-gray-400 text-2xl' />
+           <a href="">Chat</a>
+       </div>
+       <div className="flex items-center gap-3">
+           <img src={out} alt="out" />
+           <a href="/">Log out</a>
+       </div>
+   </div>
+ </div>
+ 
     
     )}
   </div>
