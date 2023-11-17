@@ -67,7 +67,7 @@ const Login = () => {
  
   return (
   
-  <div className="dark:bg-gray-900 h-full w-full">
+  <div className="dark:bg-black h-screen w-full">
   <h1 className="text-white"></h1>
   <div className="theme-switcher flex items-center dark:bg-black p-2 rounded-md shadow-inner">
   <div className={`theme-switcher flex gap-2 items-center ${isDarkMode ? 'dark:bg-black' : 'bg-white'} p-2 rounded-md shadow-inner`}>
