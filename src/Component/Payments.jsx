@@ -53,7 +53,7 @@ const Payments =()=>{
 };
     return(
       <div className='flex dark:bg-black h-full w-full' > 
-      <div className="hidden md:hidden lg:flex lg:w-1/5">
+   <div className="hidden md:hidden lg:flex lg:w-1/5">
         <Sidebar />
       </div>
         <div className="flex flex-col w-full h-full md:flex md:flex-col md:justify-right ">

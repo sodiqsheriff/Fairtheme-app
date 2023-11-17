@@ -198,8 +198,8 @@ const Overview = () =>{
             </div>
 
            </div>
-           <div className="overflow-x-auto w-full h-full px-5 dark:text-white">
-          <div className="border rounded-tl-md rounded-tr-md border-b-0  p-5">
+           <div className="max-w-full overflow-x-auto border rounded-tl-xl rounded-tr-xl mx-5  dark:text-white">
+          <div className="w-full sticky top-0 border border-x-0   p-5">
             <div className="  md:flex justify-between w-full">
               <div>
               <h1 className="text-2xl font-semibold capitalize">transaction history</h1>
@@ -234,64 +234,64 @@ const Overview = () =>{
             </div>
           </div>
 
-        </div>
-           <div className="overflow-x-auto px-5">
-        <table className=" text-left text-black min-w-full   md:text-left md:w-full px-5 dark:text-white border  border-b rounded-xl ">
+      
+        <table className=" text-left text-black min-w-full text-xs    md:text-md md:text-left md:w-full px-5 dark:text-white border  border-b rounded-xl ">
        
-               <thead className="w-full text-gray-500 md:text-gray-300 border">
-               <tr >
-              <th className='p-3 '>Name</th>
-              <th>Transaction Type</th> 
-              <th>Date</th>
-              <th>Amount</th>
-              <th>Status</th>
+               <thead className="w-full text-gray-500 md:text-gray-300 border border-x-0">
+               <tr className=''>
+              <th className='p-4 mr-7 '>Name</th>
+              <th className='p-4 mr-7'>Transaction Type</th> 
+              <th className='p-4 mr-7'>Date</th>
+              <th className='p-4 mr-7'>Amount</th>
+              <th className='p-4 mr-7'>Status</th>
                 </tr>
                </thead>
                <tbody className='border border-gray-300 '>
           <tr>
-            <td className='flex items-center gap-2 p-5'>
+            <td className='flex items-center gap-2 p-5 mr-7'>
               <img src={wema} alt='wema' />
               PAYSTACK CHECKOUT</td>
-            <td>Money received</td>
-            <td>June 21th, 10:30AM</td>
-            <td>+2,250.00</td>
-            <td ><a href="" className="bg-green-200 text-green-500 py-2 px-3 rounded font-semibold dark:bg-green-500 dark:text-white">Successful</a></td>
+            <td className='p-4 mr-7'>Money received</td>
+            <td className='p-4 mr-7'>June 21th, 10:30AM</td>
+            <td className='p-4 mr-7'>+2,250.00</td>
+            <td className='p-4 mr-7' ><a href="" className="bg-green-200 text-green-500 py-2 px-3 rounded font-semibold dark:bg-green-500 dark:text-white">Successful</a></td>
           </tr>
           </tbody>
           <tbody className='border border-gray-300 '>
           <tr>
-            <td className='flex items-center gap-2 p-5'>
+            <td className='flex items-center gap-2 p-5 mr-7'>
               <img src={mtn} alt="mtn" />
               MTN MOBILE TOPUP</td>
-            <td>Airtime Recharge</td>
-            <td>June 11th, 01:00AM</td>
-            <td>+5,000.00</td>
-            <td ><a href="" className="bg-red-200 text-red-500 py-2 px-3  w-28 rounded font-semibold dark:bg-red-500 dark:text-white">Failed</a></td>
+            <td className='p-4 mr-7'>Airtime Recharge</td>
+            <td className='p-4 mr-7'>June 11th, 01:00AM</td>
+            <td className='p-4 mr-7'>+5,000.00</td>
+            <td className='p-4 mr-7' ><a href="" className="bg-red-200 text-red-500 py-2 px-3  w-28 rounded font-semibold dark:bg-red-500 dark:text-white">Failed</a></td>
           </tr>
           </tbody>
           <tbody className='border border-gray-300 '>
           <tr>
-            <td className='flex items-center gap-2 p-5'>
+            <td className='flex items-center gap-2 p-5 mr-7'>
               <img src={opay} alt='opay' />
               AFOLABI OLAMILEKAN OLANREWAJU</td>
-            <td>Money Sent</td>
-            <td>June 10th, 09:10AM</td>
-            <td>+1,000.00</td>
-            <td ><a href="" className="bg-yellow-200 text-yellow-500 py-2 px-3 w-28 rounded font-semibold dark:bg-yellow-500 dark:text-white">Pending</a></td>
+            <td className='p-4 mr-7'>Money Sent</td>
+            <td className='p-4 mr-7'>June 10th, 09:10AM</td>
+            <td className='p-4 mr-7'>+1,000.00</td>
+            <td className='p-4 mr-7' ><a href="" className="bg-yellow-200 text-yellow-500 py-2 px-3 w-28 rounded font-semibold dark:bg-yellow-500 dark:text-white">Pending</a></td>
           </tr>
           </tbody>
           <tbody className='border border-gray-300 p-5'>
           <tr className=''>
-            <td className='flex items-center gap-2 p-5'>
+            <td className='flex items-center gap-2 p-5 mr-7'>
               <img src={opay} alt="opay" />
               SODIQ SHERIFF OLUWATOBI</td>
-            <td>Money Received</td>
-            <td>June 7th, 01:30AM</td>
-            <td>+20,000.00</td>
-            <td> <a href="" className="bg-green-200 text-green-500 py-2 px-3 rounded font-semibold dark:bg-green-500 dark:text-white">Successful</a></td>
+            <td className='p-4 mr-7'>Money Received</td>
+            <td className='p-4 mr-7'>June 7th, 01:30AM</td>
+            <td className='p-4 mr-7'>+20,000.00</td>
+            <td className='p-4 mr-7'> <a href="" className="bg-green-200 text-green-500 py-2 px-3 rounded font-semibold dark:bg-green-500 dark:text-white">Successful</a></td>
           </tr>
           </tbody>
           </table>
+          
           </div>
     </div>
 

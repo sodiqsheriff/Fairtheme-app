@@ -21,6 +21,17 @@ import out from '../assets/rightarrow.png'
 import spot from '../assets/spot.png'
 import safee from '../assets/lock.png'
 import flex from '../assets/flexibl.png'
+import scale from '../assets/growth.png'
+import daily from '../assets/daily.png'
+import tree from '../assets/tree.png'
+import green from '../assets/cbn.png'
+import rate from '../assets/compass.png'
+import returns from '../assets/door-lock.png'
+import maturity from '../assets/auto.png'
+import plans from '../assets/checkbox-multiple-line.png'
+import days from '../assets/upto.png'
+import tenure from '../assets/scales-3-line.png'
+
 
 import Sidebar from "./Sidebar"
 import { LiaGreaterThanSolid } from 'react-icons/lia';
@@ -137,32 +148,32 @@ const Savings =()=>{
     <div className="flex flex-col md:flex-row gap-5">
       <div className="flex-col bg-yellow-50  border w-full md:w-1/2 p-5 rounded-xl shadow-xl dark:bg-gray-950">
         <h1 className="text-sm font-bold dark:text-white">Grow your money!</h1>
-        <div className="flex text-xs py-5 font-semibold gap-7 dark:text-white">
+        <div className="flex text-xs py-5 font-semibold gap-7 md:gap-10 lg:gap-14 tracking-wide dark:text-white">
         <div className="flex-col space-y-4">
           <div className="flex gap-2">
-              <img src={spot} alt="" />
+              <img src={spot} alt="" className='dark:bg-white w-5 h-5 ' />
              <h1>Ease withdrawal anytime,anyday </h1>
           </div>
           <div className="flex gap-2">
-          <img src={safee} alt="" />
+          <img src={safee} alt="" className='dark:bg-white  w-5 h-5' />
              <h1>Safe and secure </h1>
           </div>
           <div className="flex gap-2">
-          <img src={flex} alt="" />
+          <img src={flex} alt="" className='dark:bg-white  w-5 h-5' />
              <h1>Flexible and Cost Effective</h1>
           </div>
           </div>
           <div className="flex-col space-y-4">
           <div className="flex gap-2">
-          {/* <img src={scale} alt="" /> */}
+          <img src={scale} alt="" className='dark:bg-white  w-5 h-5' />
              <h1>10% per annum </h1>
           </div>
           <div className="flex gap-2">
-          {/* <img src={daily} alt="" /> */}
+          <img src={daily} alt="" className='dark:bg-white  w-5 h-5' />
              <h1>Daily interest earnings </h1>
           </div>
           <div className="flex gap-2">
-          {/* <img src={tree} alt="" /> */}
+          <img src={tree} alt=""  className='dark:bg-white  w-5 h-5'/>
              <h1>No fees, Reliable</h1>
           </div>
           </div>
@@ -185,28 +196,34 @@ const Savings =()=>{
 
       </div>
       <div className="flex-col bg-yellow-50  border w-full md:w-1/2 p-5 rounded-xl shadow-xl dark:bg-gray-950">
-        <h1 className="text-sm font-bold dark:text-white">Grow your money!</h1>
-        <div className="flex text-xs py-5 font-semibold gap-7 dark:text-white">
+        <h1 className="text-sm font-bold dark:text-white">Achieve Your Goals Faster!</h1>
+        <div className="flex text-xs py-5 font-semibold gap-7 md:gap-14 tracking-wide dark:text-white">
         <div className="flex-col space-y-4">
           <div className="flex gap-2">
-             <h1>Ease withdrawal anytime,anyday </h1>
+              <img src={rate} alt="" className='dark:bg-white  w-5 h-5' />
+             <h1>24% interest rate per annum</h1>
           </div>
           <div className="flex gap-2">
-             <h1>Safe and secure </h1>
+            <img src={returns} alt="returns" className='dark:bg-white  w-5 h-5' />
+             <h1>Fixed Deposit, High returns </h1>
           </div>
           <div className="flex gap-2">
-             <h1>Flexible and Cost Effective</h1>
+            <img src={maturity} alt="" className='dark:bg-white  w-5 h-5' />
+             <h1>Automatic Withdrawal on Maturity</h1>
           </div>
           </div>
           <div className="flex-col space-y-4">
           <div className="flex gap-2">
-             <h1>10% per annum </h1>
+            <img src={days} alt="" className='dark:bg-white  w-5 h-5' />
+             <h1>Up to 7-730 days</h1>
           </div>
           <div className="flex gap-2">
-             <h1>Daily interest earnings </h1>
+            <img src={tenure} alt="" className='dark:bg-white  w-5 h-5' />
+             <h1>Flexible Tenures </h1>
           </div>
           <div className="flex gap-2">
-             <h1>No fees, Reliable</h1>
+            <img src={plans} alt="" className='dark:bg-white  w-5 h-5' />
+             <h1>Multiple Deposit Plans</h1>
           </div>
           </div>
         
@@ -229,7 +246,8 @@ const Savings =()=>{
       </div>
     
     </div>
-      <div className="flex justify-center mx-auto rounded-2xl bg-green-200 p-1 w-80 mb-36 mt-5">
+      <div className="flex items-center gap-2 justify-center mx-auto rounded-2xl bg-green-200 p-1 w-80 mb-36 mt-5">
+        <img src={green} alt="green" />
         <h1 className="text-xs text-center">Licensed by <b className='text-green-700'>CBN. Deposits insured by <b className='text-green-700'>NDIC</b></b></h1>
       </div>
    </div>

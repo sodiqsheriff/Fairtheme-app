@@ -28,7 +28,7 @@ const App = () => {
   
 
   return (
-    <div className='w-full h-full dark:bg-black md:h-full md:w-full'>
+    <div className='w-full h-full dark:bg-black md:h-full md:w-full font-Inter'>
       <RouterProvider router={router} />
     </div>
   )

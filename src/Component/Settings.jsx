@@ -18,6 +18,7 @@ import stack from '../assets/stack-line.png'
 import secure from '../assets/secure.png'
 import sett from '../assets/settings-4-line.png'
 import out from '../assets/rightarrow.png'
+import yellow from '../assets/badge.png'
 import Sidebar from "./Sidebar"
 
 const Settings =()=>{
@@ -127,7 +128,7 @@ const Settings =()=>{
   </div>
   <div className=" ">
       <div className="flex flex-col h-full md:flex-row md:border md:border-x-0 md:border-b-0 md:h-screen lg:h-full lg:border-t-0 ">
-        <div className="grid grid-cols-2 gap-4 md:flex md:flex-col px-5 pb-10 pr-10 md:border-y-0 md:border-b-0 md:border h-screen lg:border-l-0 lg:border-t-0">
+        <div className="grid grid-cols-2 gap-4 md:flex md:flex-col px-5 pb-10 pr-10 md:border-y-0 md:border-b-0 md:border h-full lg:border-l-0 lg:border-t-0">
          <div className='text-gray-500 space-y-5 pt-3'>
          <header className="px-9 pb-2 text-xl font-bold capitalize text-black  dark:text-white">account</header>
             <h1 className="bg-gray-200 rounded p-2  md:px-4 md:py-2"><a href="">Bank account details</a></h1>
@@ -160,8 +161,8 @@ const Settings =()=>{
          <h1 className="text-sm text-gray-400 pb-1">Account owner</h1>
          <h1 className="font-bold pb-5 capitalize">olamilekan afolabi</h1>
          <div className="flex bg-yellow-100 rounded-xl p-4 gap-2">
-           <div className="hidden md:flex-col p-3 border-2 border-yellow-700 rounded-full">
-
+           <div className=" md:flex-col p-3  rounded-full">
+            <img src={yellow} alt="" />
            </div>
            <div className="flex-col">
             <h1 className="text-black text-lg">Your bank account is at Level 3</h1>

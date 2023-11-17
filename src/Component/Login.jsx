@@ -107,7 +107,7 @@ const Login = () => {
         </div>
 
         <div className=''>
-        <h1 className="text-2xl text-center font-bold md:text-3xl dark:text-white">Welcome back!</h1>
+        <h1 className="text-2xl text-center font-bold md:text-3xl dark:text-white pb-1">Welcome back!</h1>
         <h2 className="text-md pb-1 text-gray-400 tracking-wider md:text-xl text-center md:pb-3">Continue to send and receive money with ease.</h2>
         </div>
 
@@ -150,12 +150,12 @@ const Login = () => {
         Log In
       </a>
             </div>
-            <div className="text-center dark:text-white  pt-4">
+            <div className="text-center dark:text-white  pt-2">
               <a href="">Are you new user? </a>
               <a href="" className='font-bold hover:opacity-50 '>Create an account</a>
             </div>
             
-            <h1 className="text-center text-gray-500 pt-10 text-sm">
+            <h1 className="text-center text-gray-500 pt-5 text-sm">
               FairMoney MFB is licencensed by the central bank of Nigeria.
               <h1>All deposits are insured by NDIC</h1>
             </h1>

@@ -18,6 +18,7 @@ import stack from '../assets/stack-line.png'
 import secure from '../assets/secure.png'
 import sett from '../assets/settings-4-line.png'
 import out from '../assets/rightarrow.png'
+import creditcard from '../assets/27.png'
 import Sidebar from "./Sidebar"
 
 const Method =()=>{
@@ -49,7 +50,7 @@ const Method =()=>{
 };
     return(
       <div className='flex dark:bg-black h-screen w-full' > 
-      <div className="hidden md:hidden lg:flex lg:w-1/5">
+        <div className="hidden md:hidden lg:flex lg:w-1/5">
         <Sidebar />
       </div>
         <div className="flex flex-col w-full h-full md:flex md:flex-col md:justify-right ">
@@ -99,10 +100,9 @@ const Method =()=>{
     
     )}
   </div>
-
   <div className="flex justify-between items-center ps-5 py-2 md:px-8 md:border md:border-x-0 md:border-t-0 lg:h-16 ">
       <div className='flex flex-col dark:text-white leading-tight'>
-        <h1 className="text-md md:text-lg font-bold capitalize lg:text-xl ">payment method</h1>
+        <h1 className="text-md md:text-lg font-bold capitalize ">payments method</h1>
       </div>
       <div className={`dashboard ${isDarkMode ? 'dark:bg-gray-900' : 'bg-white'}`}>
     
@@ -127,10 +127,10 @@ const Method =()=>{
   </div>
   </div>
   <div className="flex-col">
-    <h1 className="px-5 pt-5 pb-3">Manage the cards linked to your account.</h1>
+    <h1 className="px-5 pt-5 pb-3 dark:text-white">Manage the cards linked to your account.</h1>
     <div className="flex flex-col px-5 md:flex md:flex-row gap-5 w-full md:w-4/5 lg:w-3/5">
       <div className="flex-col rounded-xl w-full md:w-1/2 border">
-        
+        <img src={creditcard} alt=""  className='w-full h-full'/>
       </div>
       <div className="items-center justify-center py-20 w-full md:w-1/2 dark:text-white dark:border-white rounded-xl border">
         <div className="flex mx-auto border border-dashed rounded-full border-300 p-2 w-9">
