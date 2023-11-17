@@ -63,7 +63,7 @@ const toggleTheme = () => {
       {isOpen ?( <MdOutlineClose className='' />): <GiHamburgerMenu /> }
     </button>
     {isOpen  &&(
-      <div onClick={toggleMenu} className="flex flex-col absolute  top-0 right-0 bottom-0 w-1/2 h-full  px-5 pt-5 space-y-8 text-gray-400 capitalize font-semibold text-sm bg-white dark:bg-black">
+      <div onClick={toggleMenu} className=" flex-col absolute  top-0 right-0 bottom-0 w-1/2 h-screen  px-5 pt-5 space-y-8 text-gray-400 capitalize font-semibold text-sm bg-white dark:bg-black">
     <MdOutlineClose className='text-right text-5xl text-black dark:text-white' />
     <div className="flex gap-3">
           <img src={bank} alt="bank" />
