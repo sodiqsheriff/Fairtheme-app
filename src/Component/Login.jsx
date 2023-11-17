@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-
 import { IoSunnyOutline, IoMoonOutline } from 'react-icons/io5';
 import Select from 'react-select';
 import fair from '../assets/fairmoney-logo.png';
@@ -62,34 +61,29 @@ const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [password, setPassword] = useState('');
  
-
   const togglePasswordVisibilty =()=>{
     setShowPassword(!showPassword);
   };
  
-
-
-
-
   return (
     <>
-    <div className="dark:bg-gray-900 h-full w-full">
-    <h1 className="text-white"></h1>
-    <div className="theme-switcher flex items-center dark:bg-black p-2 rounded-md shadow-inner">
-    <div className={`theme-switcher flex gap-2 items-center ${isDarkMode ? 'dark:bg-black' : 'bg-white'} p-2 rounded-md shadow-inner`}>
-      <p className="ml-2 text-black dark:text-white">{isDarkMode ? 'Dark Mode' : 'Light Mode'}</p>
-        <button
-          onClick={toggleTheme}
-          className={`p-2 rounded-full transition-all duration-300 ${isDarkMode ? 'bg-gray-800 shadow-2xl' : 'bg-white shadow-inner'}`}
-        >
-          <div className="flex   space-x-5">
-            {isDarkMode ? <IoSunnyOutline className='bg-gray-400 text-white h-5 shadow-inner dark:bg-gray-800 dark:text-gray-600  rounded w-7'  /> : <IoMoonOutline  />}
-            {isDarkMode ? <IoMoonOutline className='dark:text-white '/> : <IoSunnyOutline   className='text-white bg-gray-400 h-5 shadow-inner dark:bg-black  rounded w-7' />}
-          </div>
-        </button>
-       
-      </div>
-       <div>
+  <div className="dark:bg-gray-900 h-full w-full">
+  <h1 className="text-white"></h1>
+  <div className="theme-switcher flex items-center dark:bg-black p-2 rounded-md shadow-inner">
+  <div className={`theme-switcher flex gap-2 items-center ${isDarkMode ? 'dark:bg-black' : 'bg-white'} p-2 rounded-md shadow-inner`}>
+  <p className="ml-2 text-black dark:text-white">{isDarkMode ? 'Dark Mode' : 'Light Mode'}</p>
+  <button
+    onClick={toggleTheme}
+    className={`p-2 rounded-full transition-all duration-300 ${isDarkMode ? 'bg-gray-800 shadow-2xl' : 'bg-white shadow-inner'}`}
+  >
+    <div className="flex   space-x-5">
+      {isDarkMode ? <IoSunnyOutline className='bg-gray-400 text-white h-5 shadow-inner dark:bg-gray-800 dark:text-gray-600  rounded w-7'  /> : <IoMoonOutline  />}
+      {isDarkMode ? <IoMoonOutline className='dark:text-white '/> : <IoSunnyOutline   className='text-white bg-gray-400 h-5 shadow-inner dark:bg-black  rounded w-7' />}
+    </div>
+  </button>
+
+  </div>
+  <div>
 
   </div>
     
